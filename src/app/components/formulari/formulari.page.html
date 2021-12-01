@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title class="addcolor">AÑADE UN NUEVO POKEMON</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color">
+    <ion-item class="plain-fondo">
+      <ion-input [(ngModel)]="nombre" placeholder="NOMBRE" type="text" class="centertext"></ion-input>
+    </ion-item>
+    <ion-item class="plain-fondo">
+      <ion-input [(ngModel)]="id" placeholder="ID" type="text" class="centertext"></ion-input>
+    </ion-item>
+    <ion-item class="plain-fondo">
+      <ion-input [(ngModel)]="altura" placeholder="ALTURA" type="text" class="centertext"></ion-input>
+    </ion-item>
+    <ion-item class="plain-fondo">
+      <ion-input [(ngModel)]="largura" placeholder="LARGURA" type="text" class="centertext"></ion-input>
+    </ion-item>
+    <ion-item class="plain-fondo">
+      <ion-input [(ngModel)]="imagen" placeholder="IMAGEN" type="text" class="centertext"></ion-input>
+    </ion-item>
+    <ion-item class="buttonlarge">
+      <ion-button type="button" (click)="addPokemon()" class="buttonlarge">AÑADIR</ion-button>
+    </ion-item>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule" routerLink="/pagina-principal">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="speakers" routerLink="/llistat">
+        <ion-icon name="reader-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="map" routerLink="/formulari">
+        <ion-icon name="add-circle-outline" color="primary"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
+
+

@@ -1,0 +1,25 @@
+.words{
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+}
+
+.items{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bgSide{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100vh;
+  background-color: rgba(0,0,0, 0.6);
+}
